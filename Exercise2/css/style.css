@@ -1,0 +1,72 @@
+/* Apply font size and type */
+body {
+    font: 18px 'Times New Roman', Georgia, Serif;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+/* Fixes footer at top */
+header {
+    height: 65px;
+    border: 0 0 12px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 5px 5px 5px #f1f1f1;
+}
+
+/* Remove underline of `a` tag */
+nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+/* Apply styling to first item */
+nav a:first-child {
+    font: 22px bold;
+}
+
+/* Apply margin to 2nd child */
+nav a:nth-child(2) {
+    margin: 0 0 0 60%;
+}
+
+/* Apply padding to all children except the 1st */
+nav a:not(:first-child) {
+    padding: 0 0 0 30px;
+    display: inline;
+}
+
+/* Center the content */
+header .container {
+    margin: 0 auto;
+    max-width: 1450px;
+}
+
+/* Restricting main content and centering */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Image positioning  and resizing*/
+.image-wrap {
+    margin: 65px auto;
+    max-width: 1300px;
+}
+.image-wrap img{
+    width: 100%;
+}
+
+section p {
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+    font-size: 2em;
+    color: rgb(100, 100, 100);
+}
