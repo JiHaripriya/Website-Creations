@@ -1,6 +1,2 @@
-Font - Times New Roman, Georgia, Serif;
+Font - Georgia, Times New Roman, Serif;
 Color - Black
-Seasonal background color, send message bg, footer - #f1f1f1
-Description font color - #c1c9d3
-Catering service address color - #617d91
-Header color #

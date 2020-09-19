@@ -1,6 +1,6 @@
 /* Apply font size and type */
 body {
-    font: 18px 'Times New Roman', Georgia, Serif;
+    font: 18px Georgia, 'Times New Roman', Serif;
     box-sizing: border-box;
     letter-spacing: 2px;
 }
@@ -76,7 +76,7 @@ main {
     left: 20px;
     font-size: 1.8em;
     letter-spacing: 3px;
-    color: rgb(99, 98, 98);
+    color: rgb(126, 126, 126);
 }
 
 /* Distance between sections */
@@ -160,7 +160,7 @@ section .content {
     width: 50%; 
 }
 
-/* Centering text, font size, letter spacing to headers and paragraph */
+/* Centering text, font size, letter spacing to headers */
 #menu h1{
     text-align: center;
     font-weight: normal;
@@ -180,6 +180,63 @@ section .content {
     color: rgb(153, 153, 153);
 }
 
+#contact .content {
+    border-bottom: none;
+    height: 75vh;
+}
+#contact h1{
+    font-weight: normal;
+    letter-spacing: 3px;
+    padding: 0 0 30px 0;
+}
+
+#contact p {
+    font: 16px normal;
+    letter-spacing: normal;
+}
+
+#contact h4 {
+    color: #617d91;
+}
+
+form {
+    margin: 50px 0 0 0;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="datetime-local"]  {
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 10px;
+    border: none;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+form input[type="submit"] {
+    border: none;
+    margin: 30px 0 0 0;
+    padding: 10px 15px 10px 15px;
+}
+
+::placeholder {
+    color: rgb(150, 150, 150);
+}
+
+input:focus {
+    outline: none;
+}
+
+footer {
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+footer p {
+    text-align: center;
+}
 
 
 
