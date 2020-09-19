@@ -14,7 +14,8 @@ header {
     top: 0;
     left: 0;
     background-color: white;
-    box-shadow: 5px 5px 5px #f1f1f1;
+    box-shadow: 0px 4px 15px rgb(153, 153, 153);
+    z-index: 2;
 }
 
 /* Remove underline of `a` tag */
@@ -55,18 +56,135 @@ main {
 }
 
 /* Image positioning  and resizing*/
-.image-wrap {
+.introduction {
     margin: 65px auto;
     max-width: 1300px;
+    position: relative;
 }
-.image-wrap img{
+.introduction img{
     width: 100%;
+    z-index: -1;
+    position: relative;
 }
 
-section p {
+/* Position `p` to align with image */
+.introduction p {
+    z-index: 0;
+    margin: 0 auto;
     position: absolute;
-    bottom: 10px;
-    left: 130px;
-    font-size: 2em;
-    color: rgb(100, 100, 100);
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    color: rgb(99, 98, 98);
 }
+
+/* Distance between sections */
+section {
+    margin: 0 0 50px 0;
+}
+
+/* Content size and spacing */
+section .content {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+    border-bottom: 1px solid #dbdbdb;
+    padding: 5% 0 5% 0;
+}
+
+/* Image position and size with respect to section */
+#about .content .image-wrap {
+    padding: 30px 0 10px 0;
+    width: 45%;
+}
+#about .content .image-wrap img {
+    width: 100%;
+    float: left;
+}
+
+/* Text content of section about */
+#about .content .text-wrap {
+    float: right;
+    width: 50%; 
+}
+
+/* Centering text, font size, letter spacing to headers and paragraph */
+#about h1, #about h2 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+#about h2 {
+    padding: 15px;
+    font: 18px normal;
+}
+#about p {
+    letter-spacing: 1px;
+    line-height: 2;
+    font: 18px normal;
+}
+
+/* Change color of last paragraph */ 
+#about .text-wrap p:last-child {
+    color: rgb(153, 153, 153);
+}
+
+/* Highlight text with color */
+#about span {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 1px 3px 1px 3px;
+}
+
+
+/* Image position and size with respect to section */
+#menu .content {
+    height: calc(100vh - 65px);
+    margin: 0 auto;
+}
+
+#menu .content .image-wrap {
+    height: calc(100vh - 65px);
+    width: 45%;
+    float: right;
+}
+#menu .content .image-wrap img {
+    width: 100%;
+    float: right;
+}
+
+/* Text content of section about */
+#menu .content .text-wrap {
+    float: left;
+    width: 50%; 
+}
+
+/* Centering text, font size, letter spacing to headers and paragraph */
+#menu h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 3px;
+    padding: 0 0 30px 0;
+}
+
+#menu h3 {
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+#menu h5 {
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 0 0 20px 0;
+    color: rgb(153, 153, 153);
+}
+
+
+
+
+
+
+
+
+
