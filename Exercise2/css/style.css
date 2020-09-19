@@ -167,12 +167,10 @@ section .content {
     letter-spacing: 3px;
     padding: 0 0 30px 0;
 }
-
 #menu h3 {
     letter-spacing: 3px;
     font-weight: normal;
 }
-
 #menu h5 {
     font-weight: normal;
     letter-spacing: 1px;
@@ -180,29 +178,36 @@ section .content {
     color: rgb(153, 153, 153);
 }
 
+/* Adding height and removing border from Contact section */
 #contact .content {
     border-bottom: none;
     height: 75vh;
 }
+
+/* Styling `h1` tag of contact section */
 #contact h1{
     font-weight: normal;
     letter-spacing: 3px;
     padding: 0 0 30px 0;
 }
 
+/* Styling `p` tag of contact section */
 #contact p {
     font: 16px normal;
     letter-spacing: normal;
 }
 
+/* Styling `h4` tag of contact section */
 #contact h4 {
     color: #617d91;
 }
 
+/* Spacing between form elements */
 form {
     margin: 50px 0 0 0;
 }
 
+/* Removing borders and adjusting width of input elements */
 form input[type="text"],
 form input[type="number"],
 form input[type="datetime-local"]  {
@@ -213,20 +218,24 @@ form input[type="datetime-local"]  {
     border-bottom: 1px solid rgb(153, 153, 153);
 }
 
+/* Customizing button */
 form input[type="submit"] {
     border: none;
     margin: 30px 0 0 0;
     padding: 10px 15px 10px 15px;
 }
 
+/* Font color of placeholder value */
 ::placeholder {
     color: rgb(150, 150, 150);
 }
 
+/* Removes highlight box on focus */
 input:focus {
     outline: none;
 }
 
+/* Position footer and setting color */
 footer {
     position: absolute;
     height: 65px;
@@ -234,6 +243,7 @@ footer {
     background-color: #f1f1f1;
 }
 
+/* Aligning text to center */
 footer p {
     text-align: center;
 }
