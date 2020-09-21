@@ -185,6 +185,7 @@ section .content {
 /* Adding height and removing border from Contact section */
 #contact .content {
     border-bottom: none;
+    padding: 5% 0 0% 0;
 }
 
 /* Styling `h2` tag of contact section */
@@ -230,11 +231,6 @@ form input[type="submit"] {
     padding: 10px 15px 10px 15px;
 }
 
-/* Font color of placeholder value */
-::placeholder {
-    color: rgb(150, 150, 150);
-}
-
 /* Removes highlight box on focus */
 input:focus {
     outline: none;
@@ -244,25 +240,16 @@ form input[type="submit"]:hover {
     background-color: rgb(245, 63, 94);
     color: white;
 }
+
 /* Position footer and setting color */
 footer {
-    position: absolute;
-    height: 85px;
+    height: 95px;
     width: 100%;
     background-color: #f1f1f1;
 }
 
-
 /* Aligning text to center */
 footer p {
-    padding: 15px;
+    padding: 35px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
