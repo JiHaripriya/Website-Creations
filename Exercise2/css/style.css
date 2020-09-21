@@ -3,6 +3,14 @@ body {
     font: 18px Georgia, 'Times New Roman', Serif;
     box-sizing: border-box;
     letter-spacing: 2px;
+    text-rendering: optimizeLegibility;
+}
+
+/* Centering text, font size, letter spacing to headers and paragraph */
+h2 {
+    text-align: center;
+    font: 1.75em normal;
+    letter-spacing: 3px;
 }
 
 /* Fixes footer at top */
@@ -18,36 +26,31 @@ header {
     z-index: 2;
 }
 
-/* Remove underline of `a` tag */
-nav a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    padding: 20px;
-    vertical-align: middle;
-}
-
-/* Apply styling to first item */
-nav a:first-child {
-    font: 22px bold;
-}
-
-/* Apply margin to 2nd child */
-nav a:nth-child(2) {
-    margin: 0 0 0 60%;
-}
-
-/* Apply padding to all children except the 1st */
-nav a:not(:first-child) {
-    padding: 0 0 0 30px;
-    display: inline;
-}
-
-/* Center the content */
 header .container {
     margin: 0 auto;
-    max-width: 1450px;
+    max-width: 1400px;
+    height: 65px;
+    padding: 20px 10px 0 0;
 }
+
+a { 
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 0 15px 0 0;    
+}
+
+/* Apply styling to Logo item */
+.logo {
+    float: left;
+}
+
+
+nav .content {
+    float: right;
+}
+
 
 /* Restricting main content and centering */
 main {
@@ -56,32 +59,31 @@ main {
 }
 
 /* Image positioning  and resizing*/
-.introduction {
+.banner {
     margin: 65px auto;
     max-width: 1300px;
     position: relative;
 }
-.introduction img{
+.banner img {
     width: 100%;
     z-index: -1;
     position: relative;
 }
 
 /* Position `p` to align with image */
-.introduction p {
+.banner h1 {
     z-index: 0;
-    margin: 0 auto;
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     left: 20px;
-    font-size: 1.8em;
-    letter-spacing: 3px;
+    font-weight: normal;
+    letter-spacing: 4px;
     color: rgb(126, 126, 126);
 }
 
 /* Distance between sections */
 section {
-    margin: 0 0 50px 0;
+    margin: 0 0 25px 0;
 }
 
 /* Content size and spacing */
@@ -93,11 +95,17 @@ section .content {
     padding: 5% 0 5% 0;
 }
 
+/* Over writing padding space for ABOUT section */
+#about .content {
+    padding: 0 0 5% 0;
+}
+
 /* Image position and size with respect to section */
 #about .content .image-wrap {
     padding: 30px 0 10px 0;
     width: 45%;
 }
+
 #about .content .image-wrap img {
     width: 100%;
     float: left;
@@ -109,16 +117,12 @@ section .content {
     width: 50%; 
 }
 
-/* Centering text, font size, letter spacing to headers and paragraph */
-#about h1, #about h2 {
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 3px;
-}
-#about h2 {
+#about h3 {
     padding: 15px;
     font: 18px normal;
+    text-align: center;
 }
+
 #about p {
     letter-spacing: 1px;
     line-height: 2;
@@ -161,33 +165,30 @@ section .content {
 }
 
 /* Centering text, font size, letter spacing to headers */
-#menu h1{
-    text-align: center;
-    font-weight: normal;
+
+#menu .text-wrap p:nth-child(odd){
     letter-spacing: 3px;
-    padding: 0 0 30px 0;
+    font-size: 20px;
+    padding: 10px 0 0 0;
 }
-#menu h3 {
-    letter-spacing: 3px;
+#menu .text-wrap p:nth-child(even) {
     font-weight: normal;
-}
-#menu h5 {
-    font-weight: normal;
-    letter-spacing: 1px;
-    padding: 0 0 20px 0;
+    letter-spacing: normal;
+    font-size: 16px;
     color: rgb(153, 153, 153);
+    padding: 0 0 20px 0;
 }
 
 /* Adding height and removing border from Contact section */
 #contact .content {
     border-bottom: none;
-    height: 75vh;
 }
 
-/* Styling `h1` tag of contact section */
-#contact h1{
+/* Styling `h2` tag of contact section */
+#contact h2 {
     font-weight: normal;
     letter-spacing: 3px;
+    text-align: left;
     padding: 0 0 30px 0;
 }
 
@@ -198,8 +199,9 @@ section .content {
 }
 
 /* Styling `h4` tag of contact section */
-#contact h4 {
+#contact p:nth-child(3) {
     color: #617d91;
+    font: 18px bold;
 }
 
 /* Spacing between form elements */
@@ -221,7 +223,7 @@ form input[type="datetime-local"]  {
 /* Customizing button */
 form input[type="submit"] {
     border: none;
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 10px 15px 10px 15px;
 }
 
@@ -238,13 +240,15 @@ input:focus {
 /* Position footer and setting color */
 footer {
     position: absolute;
-    height: 65px;
+    height: 85px;
     width: 100%;
     background-color: #f1f1f1;
 }
 
+
 /* Aligning text to center */
 footer p {
+    padding: 15px;
     text-align: center;
 }
 
