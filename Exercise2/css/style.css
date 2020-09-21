@@ -1,16 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Apply font size and type */
 body {
     font: 18px Georgia, 'Times New Roman', Serif;
-    box-sizing: border-box;
     letter-spacing: 2px;
-    text-rendering: optimizeLegibility;
 }
 
 /* Centering text, font size, letter spacing to headers and paragraph */
 h2 {
     text-align: center;
     font: 1.75em normal;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 /* Fixes footer at top */
@@ -29,7 +31,6 @@ header {
 header .container {
     margin: 0 auto;
     max-width: 1400px;
-    height: 65px;
     padding: 20px 10px 0 0;
 }
 
@@ -62,7 +63,7 @@ main {
 
 /* Image positioning  and resizing*/
 .banner {
-    margin: 65px auto;
+    margin: 65px auto 0;
     max-width: 1300px;
     position: relative;
 }
@@ -86,20 +87,17 @@ main {
 /* Distance between sections */
 section {
     margin: 0 0 25px 0;
+    float: left;
+    width: 100%;
 }
 
 /* Content size and spacing */
 section .content {
-    max-width: 1000px;
-    margin: 0 auto;
-    height: calc(100vh - 100px);
+    float: left;
     border-bottom: 1px solid #dbdbdb;
-    padding: 5% 0 5% 0;
-}
-
-/* Over writing padding space for ABOUT section */
-#about .content {
-    padding: 0 0 5% 0;
+    padding: 70px 0;
+    margin: 0 200px;
+    width: calc(100% - 400px);
 }
 
 /* Image position and size with respect to section */
@@ -128,7 +126,7 @@ section .content {
 #about p {
     letter-spacing: 1px;
     line-height: 2;
-    font: 18px normal;
+    font: 15px normal;
 }
 
 /* Change color of last paragraph */ 
@@ -144,14 +142,7 @@ section .content {
 }
 
 
-/* Image position and size with respect to section */
-#menu .content {
-    height: calc(100vh - 65px);
-    margin: 0 auto;
-}
-
 #menu .content .image-wrap {
-    height: calc(100vh - 65px);
     width: 45%;
     float: right;
 }
@@ -170,14 +161,14 @@ section .content {
 
 #menu .text-wrap p:nth-child(odd){
     letter-spacing: 3px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 0 0 0;
 }
 
 #menu .text-wrap p:nth-child(even) {
     font-weight: normal;
     letter-spacing: normal;
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(153, 153, 153);
     padding: 0 0 20px 0;
 }
@@ -193,7 +184,7 @@ section .content {
     font-weight: normal;
     letter-spacing: 3px;
     text-align: left;
-    padding: 0 0 30px 0;
+    padding: 0 0 10px 0;
 }
 
 /* Styling `p` tag of contact section */
@@ -239,6 +230,10 @@ input:focus {
 form input[type="submit"]:hover {
     background-color: rgb(245, 63, 94);
     color: white;
+}
+
+.clear-fix {
+    clear: both;
 }
 
 /* Position footer and setting color */
