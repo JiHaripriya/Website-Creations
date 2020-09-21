@@ -21,7 +21,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-image: linear-gradient(white, rgb(250, 250, 250));
     box-shadow: 0px 4px 15px rgb(153, 153, 153);
     z-index: 2;
 }
@@ -41,20 +41,22 @@ a {
     padding: 0 15px 0 0;    
 }
 
+a:hover {
+    color: rgb(247, 9, 48);
+}
+
 /* Apply styling to Logo item */
 .logo {
     float: left;
 }
 
-
 nav .content {
     float: right;
 }
 
-
 /* Restricting main content and centering */
 main {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -171,6 +173,7 @@ section .content {
     font-size: 20px;
     padding: 10px 0 0 0;
 }
+
 #menu .text-wrap p:nth-child(even) {
     font-weight: normal;
     letter-spacing: normal;
@@ -237,6 +240,10 @@ input:focus {
     outline: none;
 }
 
+form input[type="submit"]:hover {
+    background-color: rgb(245, 63, 94);
+    color: white;
+}
 /* Position footer and setting color */
 footer {
     position: absolute;
