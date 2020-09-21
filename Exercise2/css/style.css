@@ -18,6 +18,11 @@ h2 {
     letter-spacing: 4px;
 }
 
+h3 {
+    font: 13px normal;
+    text-align: center;
+}
+
 a { 
     color: black;
     display: inline-block;
@@ -34,12 +39,6 @@ p {
     letter-spacing: 1px;
     line-height: 2;
     font: 12px normal;
-}
-
-h3 {
-    padding: 15px;
-    font: 13px normal;
-    text-align: center;
 }
 
 /****************************************************************
@@ -75,7 +74,7 @@ nav {
 
 /* Restricting main content and centering */
 main {
-    max-width: 80vw;
+    max-width: 85vw;
     margin: 0 auto;
 }
 
@@ -121,9 +120,9 @@ section {
 section .content {
     float: left;
     border-bottom: 1px solid #dbdbdb;
-    padding: 70px 0;
-    margin: 0 15vw;
-    width: calc(100% - 30vw);
+    padding: 50px 0;
+    margin: 0 17vw;
+    width: calc(100% - 34vw);
 }
 
 /****************************************************************
@@ -131,20 +130,20 @@ section .content {
 *****************************************************************/
 
 /* Image position and size with respect to section */
-.about .image-wrap {
+.about-image-wrap {
     padding: 30px 0 10px 0;
     width: 45%;
 }
 
-.about img {
+.about-img {
     width: 100%;
     float: left;
 }
 
 /* Text content of section about */
-.about .text-wrap {
+.about-text-wrap {
     float: right;
-    width: 50%; 
+    width: 52%; 
 }
 
 /* Change color of last paragraph */ 
@@ -162,20 +161,20 @@ section .content {
 /****************************************************************
                             MENU SECTION
 *****************************************************************/
-.menu .image-wrap {
+.menu-image-wrap {
     width: 45%;
     float: right;
 }
 
-.menu img {
+.menu-img {
     width: 100%;
     float: right;
 }
 
 /* Text content of section about */
-.menu .text-wrap {
+.menu-text-wrap {
     float: left;
-    width: 50%; 
+    width: 52%; 
 }
 
 /* Centering text, font size, letter spacing to headers */
@@ -183,6 +182,7 @@ section .content {
 .menu p:nth-child(odd) {
     font-size: 14px;
     padding: 10px 0 0 0;
+    letter-spacing: 3px;
 }
 
 .menu p:nth-child(even) {
@@ -199,6 +199,7 @@ section .content {
 /* Adding height and removing border from Contact section */
 .contact .content {
     border-bottom: none;
+    padding: 0 0 40px 0;
 }
 
 /* Styling `h2` tag of contact section */
@@ -209,7 +210,7 @@ section .content {
 /* Styling `h4` tag of contact section */
 .highlight-text-blue {
     color: #617d91;
-    font: 14px bold;
+    font: 14px bolder;
 }
 
 /****************************************************************
