@@ -1,10 +1,13 @@
+/****************************************************************
+                            REUSABLE SECTION
+*****************************************************************/
 * {
     box-sizing: border-box;
 }
 
 /* Apply font size and type */
 body {
-    font: 18px Georgia, 'Times New Roman', Serif;
+    font: 14px Georgia, 'Times New Roman', Serif;
     letter-spacing: 2px;
 }
 
@@ -15,9 +18,24 @@ h2 {
     letter-spacing: 4px;
 }
 
+a { 
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 0 15px 0 0;    
+}
+
+a:hover {
+    color: rgb(247, 9, 48);
+}
+
+/****************************************************************
+                            HEADER SECTION
+*****************************************************************/
 /* Fixes footer at top */
 header {
-    height: 65px;
+    height: 55px;
     border: 0 0 12px 0;
     width: 100%;
     position: fixed;
@@ -32,18 +50,6 @@ header .container {
     margin: 0 auto;
     max-width: 1400px;
     padding: 20px 10px 0 0;
-}
-
-a { 
-    color: black;
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
-    padding: 0 15px 0 0;    
-}
-
-a:hover {
-    color: rgb(247, 9, 48);
 }
 
 /* Apply styling to Logo item */
@@ -61,9 +67,13 @@ main {
     margin: 0 auto;
 }
 
+/****************************************************************
+                            BANNER SECTION
+*****************************************************************/
+
 /* Image positioning  and resizing*/
 .banner {
-    margin: 65px auto 0;
+    margin: 55px auto 0;
     max-width: 1300px;
     position: relative;
 }
@@ -100,6 +110,10 @@ section .content {
     width: calc(100% - 400px);
 }
 
+/****************************************************************
+                            ABOUT SECTION
+*****************************************************************/
+
 /* Image position and size with respect to section */
 #about .content .image-wrap {
     padding: 30px 0 10px 0;
@@ -119,14 +133,14 @@ section .content {
 
 #about h3 {
     padding: 15px;
-    font: 18px normal;
+    font: 13px normal;
     text-align: center;
 }
 
 #about p {
     letter-spacing: 1px;
     line-height: 2;
-    font: 15px normal;
+    font: 12px normal;
 }
 
 /* Change color of last paragraph */ 
@@ -141,7 +155,9 @@ section .content {
     padding: 1px 3px 1px 3px;
 }
 
-
+/****************************************************************
+                            MENU SECTION
+*****************************************************************/
 #menu .content .image-wrap {
     width: 45%;
     float: right;
@@ -161,17 +177,21 @@ section .content {
 
 #menu .text-wrap p:nth-child(odd){
     letter-spacing: 3px;
-    font-size: 18px;
+    font-size: 14px;
     padding: 10px 0 0 0;
 }
 
 #menu .text-wrap p:nth-child(even) {
     font-weight: normal;
     letter-spacing: normal;
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(153, 153, 153);
     padding: 0 0 20px 0;
 }
+
+/****************************************************************
+                            CONTACT SECTION
+*****************************************************************/
 
 /* Adding height and removing border from Contact section */
 #contact .content {
@@ -189,16 +209,19 @@ section .content {
 
 /* Styling `p` tag of contact section */
 #contact p {
-    font: 16px normal;
+    font: 13px normal;
     letter-spacing: normal;
 }
 
 /* Styling `h4` tag of contact section */
 #contact p:nth-child(3) {
     color: #617d91;
-    font: 18px bold;
+    font: 15px bold;
 }
 
+/****************************************************************
+                            CONTACT FORM
+*****************************************************************/
 /* Spacing between form elements */
 form {
     margin: 50px 0 0 0;
@@ -222,19 +245,24 @@ form input[type="submit"] {
     padding: 10px 15px 10px 15px;
 }
 
-/* Removes highlight box on focus */
-input:focus {
-    outline: none;
-}
-
 form input[type="submit"]:hover {
     background-color: rgb(245, 63, 94);
     color: white;
 }
 
+/* Removes highlight box of input elements on focus */
+input:focus {
+    outline: none;
+}
+
+/* Removes excess padding of main section */
 .clear-fix {
     clear: both;
 }
+
+/*****************************************************
+                    FOOTER SECTION
+******************************************************/
 
 /* Position footer and setting color */
 footer {
@@ -245,6 +273,6 @@ footer {
 
 /* Aligning text to center */
 footer p {
-    padding: 35px;
+    padding: 45px 0 0 0;
     text-align: center;
 }
