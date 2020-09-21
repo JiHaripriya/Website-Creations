@@ -11,7 +11,7 @@ Directory structure for each exercise:
 ### Project 1: Simple One-Page Website using HTML5 and CSS
 
 Exercise1 Design:
-<img src="Exercise1/Design_and_Specifications/Design.png>
+<img src="Exercise1/Design_and_Specifications/Design.png">
 
 Output:
 <img src="Excercise1/Outputs/Update1_18_Sep_2020.png" alt="Output">
