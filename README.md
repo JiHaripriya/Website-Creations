@@ -24,7 +24,8 @@ Output:
 
 ### Project 2: Simple One-Page Website using HTML5 and CSS
 Design:
-<img src="Exercise2/Design_and_Specifications/Workshop-Design.png>
+<img src="Exercise2/Design_and_Specifications/Workshop-Design.png">
 
-Output:
-<img src="https://j.gifs.com/NLJ386.gif" alt="Output.gif">
+Output: (Last updated: 21-Sep-2020, Monday): https://drive.google.com/file/d/15IfMXDZvzVCMWXh06cIA-7iAWjA5fy-K/view?usp=sharing
+
+
