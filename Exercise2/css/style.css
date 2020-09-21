@@ -30,6 +30,18 @@ a:hover {
     color: rgb(247, 9, 48);
 }
 
+p {
+    letter-spacing: 1px;
+    line-height: 2;
+    font: 12px normal;
+}
+
+h3 {
+    padding: 15px;
+    font: 13px normal;
+    text-align: center;
+}
+
 /****************************************************************
                             HEADER SECTION
 *****************************************************************/
@@ -48,7 +60,7 @@ header {
 
 header .container {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 90vw;
     padding: 20px 10px 0 0;
 }
 
@@ -57,13 +69,13 @@ header .container {
     float: left;
 }
 
-nav .content {
+nav {
     float: right;
 }
 
 /* Restricting main content and centering */
 main {
-    max-width: 1300px;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -74,9 +86,10 @@ main {
 /* Image positioning  and resizing*/
 .banner {
     margin: 55px auto 0;
-    max-width: 1300px;
+    max-width: 85vw;
     position: relative;
 }
+
 .banner img {
     width: 100%;
     z-index: -1;
@@ -94,6 +107,9 @@ main {
     color: rgb(126, 126, 126);
 }
 
+/****************************************************************
+                    GENERAL CHARACTERISTICS : SECTION
+*****************************************************************/
 /* Distance between sections */
 section {
     margin: 0 0 25px 0;
@@ -106,8 +122,8 @@ section .content {
     float: left;
     border-bottom: 1px solid #dbdbdb;
     padding: 70px 0;
-    margin: 0 200px;
-    width: calc(100% - 400px);
+    margin: 0 15vw;
+    width: calc(100% - 30vw);
 }
 
 /****************************************************************
@@ -115,41 +131,29 @@ section .content {
 *****************************************************************/
 
 /* Image position and size with respect to section */
-#about .content .image-wrap {
+.about .image-wrap {
     padding: 30px 0 10px 0;
     width: 45%;
 }
 
-#about .content .image-wrap img {
+.about img {
     width: 100%;
     float: left;
 }
 
 /* Text content of section about */
-#about .content .text-wrap {
+.about .text-wrap {
     float: right;
     width: 50%; 
 }
 
-#about h3 {
-    padding: 15px;
-    font: 13px normal;
-    text-align: center;
-}
-
-#about p {
-    letter-spacing: 1px;
-    line-height: 2;
-    font: 12px normal;
-}
-
 /* Change color of last paragraph */ 
-#about .text-wrap p:last-child {
+.color-text {
     color: rgb(153, 153, 153);
 }
 
 /* Highlight text with color */
-#about span {
+.highlight-text-grey {
     display: inline-block;
     background-color: #f1f1f1;
     padding: 1px 3px 1px 3px;
@@ -158,31 +162,29 @@ section .content {
 /****************************************************************
                             MENU SECTION
 *****************************************************************/
-#menu .content .image-wrap {
+.menu .image-wrap {
     width: 45%;
     float: right;
 }
-#menu .content .image-wrap img {
+.menu img {
     width: 100%;
     float: right;
 }
 
 /* Text content of section about */
-#menu .content .text-wrap {
+.menu .text-wrap {
     float: left;
     width: 50%; 
 }
 
 /* Centering text, font size, letter spacing to headers */
 
-#menu .text-wrap p:nth-child(odd){
-    letter-spacing: 3px;
+.menu p:nth-child(odd) {
     font-size: 14px;
     padding: 10px 0 0 0;
 }
 
-#menu .text-wrap p:nth-child(even) {
-    font-weight: normal;
+.menu p:nth-child(even) {
     letter-spacing: normal;
     font-size: 13px;
     color: rgb(153, 153, 153);
@@ -194,29 +196,19 @@ section .content {
 *****************************************************************/
 
 /* Adding height and removing border from Contact section */
-#contact .content {
+.contact .content {
     border-bottom: none;
-    padding: 5% 0 0% 0;
 }
 
 /* Styling `h2` tag of contact section */
-#contact h2 {
-    font-weight: normal;
-    letter-spacing: 3px;
+.contact h2 {
     text-align: left;
-    padding: 0 0 10px 0;
-}
-
-/* Styling `p` tag of contact section */
-#contact p {
-    font: 13px normal;
-    letter-spacing: normal;
 }
 
 /* Styling `h4` tag of contact section */
-#contact p:nth-child(3) {
+.highlight-text-blue {
     color: #617d91;
-    font: 15px bold;
+    font: 14px bold;
 }
 
 /****************************************************************
@@ -275,4 +267,5 @@ footer {
 footer p {
     padding: 45px 0 0 0;
     text-align: center;
+    font-size: 12px;
 }
