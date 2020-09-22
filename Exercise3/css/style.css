@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS DocumentProject: Gardener Website
+----------------------------------------------------------------------------------------------------------*/
+
+/*------------------Layout,Table of Contents-----------------------------------------------------------------
+1. BASIC STYLING FOR COMMON HTML ELEMENTS
+2. TYPOS
+3. COMMON CSS CLASSES
+4. SKELETON
+5. HEADER SECTION
+6. BODY SECTION
+7. FOOTER SECTION
+8. MEDIA QUERIES
+-----------------------------------------------------------------------------------------------------------*/
+
+/*................................................
+    1. BASIC STYLING FOR COMMON HTML ELEMENTS
+.................................................*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Manrope-Medium", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  color: #656565;
+  background-color: #f7f6f4;
+  line-height: 30px;
+}
+
+a,
+a:hover,
+a:focus {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 0;
+  outline: none;
+}
+
+
+/*................................................
+    2. TYPOS
+.................................................*/
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraLight';
+    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraLight.woff2') format('woff2'),
+        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Light';
+    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Light.woff2') format('woff2'),
+        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Bold.woff2') format('woff2'),
+        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Regular.woff2') format('woff2'),
+        url('.Exercise3/Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-SemiBold.woff2') format('woff2'),
+        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Medium.woff2') format('woff2'),
+        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*................................................
+    3. COMMON CSS CLASSES
+.................................................*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.row-align {
+    display: flex;
+}
+
+/*................................................
+    5. HEADER SECTION
+.................................................*/
+
+#header {
+    padding: 25px 0; /* top and bottom = 25px */
+}
+
+.logo {
+    align-self: center;
+}
+
+.main-nav__item {
+    padding: 0 15px;
+    font: 16px "Manrope-Medium";
+}
+
+/*................................................
+    6. BODY SECTION
+.................................................*/
+
+/* 6.1 BANNER SECTIOn */
+.banner .container {
+    align-items: center;
+}
+
+.banner__text-content {
+    flex: 1 1 0px;
+}
+
+.banner__text-content > p,
+.banner__text-content > input[type="button"] {
+    margin: 25px 0 0 0;
+}
+
+.banner__text-content__heading {
+    font: 45px "Manrope-Bold";
+    color: #000000;
+}
+
+.secondary-color {
+    color: #709d61;
+}
+
+.banner__text-content__paragraph {
+    font: 16px "Manrope-Medium";
+}
+
+.banner__text-content__button {
+    background-color: #709d61;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font: 16px "Manrope-Bold";
+}
