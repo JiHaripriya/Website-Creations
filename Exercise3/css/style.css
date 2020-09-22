@@ -150,6 +150,44 @@ input[type="submit"] {
     display: flex;
 }
 
+.column-align {
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover {
+    color: #709d61;
+}
+
+.content-heading {
+    font: 45px "Manrope-Bold";
+    color: #000000;
+}
+
+.content-sub-heading {
+    font: 20px "Manrope-Bold";
+    color: #000000;
+}
+
+.secondary-color {
+    color: #709d61;
+}
+
+.content-paragraph {
+    font: 16px "Manrope-Medium";
+}
+
+section {
+    margin: 0 0 60px 0;
+}
+
+.container {
+    align-items: center;
+}
+
+.content-separation {
+    margin: 0 0 10px 0;
+}
 /*................................................
     5. HEADER SECTION
 .................................................*/
@@ -165,16 +203,20 @@ input[type="submit"] {
 .main-nav__item {
     padding: 0 15px;
     font: 16px "Manrope-Medium";
+    transition: transform .2s;
+}
+
+.main-nav__item:hover {
+    transform: scale(1.5);
 }
 
 /*................................................
     6. BODY SECTION
 .................................................*/
 
-/* 6.1 BANNER SECTIOn */
-.banner .container {
-    align-items: center;
-}
+/*................................................
+        6.1 BANNER SECTION
+.................................................*/
 
 .banner__text-content {
     flex: 1 1 0px;
@@ -185,19 +227,6 @@ input[type="submit"] {
     margin: 25px 0 0 0;
 }
 
-.banner__text-content__heading {
-    font: 45px "Manrope-Bold";
-    color: #000000;
-}
-
-.secondary-color {
-    color: #709d61;
-}
-
-.banner__text-content__paragraph {
-    font: 16px "Manrope-Medium";
-}
-
 .banner__text-content__button {
     background-color: #709d61;
     color: #ffffff;
@@ -205,3 +234,28 @@ input[type="submit"] {
     border-radius: 5px;
     font: 16px "Manrope-Bold";
 }
+
+.banner__text-content__button:hover {
+    background-color:  #f7f6f4;
+    color: #709d61;
+    outline: 1px solid #709d61;
+    box-shadow: 1px 0 6px #709d61;  
+}
+
+/*................................................
+        6.2 WHAT WE OFFER SECTION
+.................................................*/
+
+/* Preserving icon size */
+
+.what-we-offer {
+    text-align: center;
+}
+
+.what-we-offer img {
+    border-radius: 25px;
+    background-color: rgb(240, 241, 236);
+    border-radius: 40px;
+    padding: 15px;
+}
+
