@@ -144,15 +144,19 @@ input[type="submit"] {
     margin: 0 auto;
     padding: 0 20px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .row-align {
     display: flex;
+    flex-direction: row;
+    
 }
 
 .column-align {
     display: flex;
     flex-direction: column;
+    flex: 0 0 33%;
 }
 
 a:hover {
@@ -181,12 +185,8 @@ section {
     margin: 0 0 60px 0;
 }
 
-.container {
-    align-items: center;
-}
-
 .content-separation {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 /*................................................
     5. HEADER SECTION
@@ -247,7 +247,6 @@ section {
 .................................................*/
 
 /* Preserving icon size */
-
 .what-we-offer {
     text-align: center;
 }
@@ -265,6 +264,7 @@ section {
 .about__text-content {
     align-self: baseline;
 }
+
 .about .about__text-content__button {
     background-color:#f7f6f4;
     color: #709d61;
@@ -283,3 +283,23 @@ section {
 /*....................................................
         6.4 SERVICES SECTION
 .....................................................*/
+
+.service .container > p {
+    text-align: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.service img {
+    align-self: flex-start;
+    border-radius: 25px;
+    background-color: rgb(240, 241, 236);
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.service__content--seperation {
+    padding: 15px 0 0 0;
+}
