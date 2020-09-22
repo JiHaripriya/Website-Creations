@@ -74,8 +74,8 @@ input[type="submit"] {
 .................................................*/
 @font-face {
     font-family: 'Manrope-ExtraBold';
-    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraBold.woff2') format('woff2'),
-        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraBold.woff') format('woff');
+    src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -83,8 +83,8 @@ input[type="submit"] {
 
 @font-face {
     font-family: 'Manrope-ExtraLight';
-    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraLight.woff2') format('woff2'),
-        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-ExtraLight.woff') format('woff');
+    src: url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -92,8 +92,8 @@ input[type="submit"] {
 
 @font-face {
     font-family: 'Manrope-Light';
-    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Light.woff2') format('woff2'),
-        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Light.woff') format('woff');
+    src: url('../fonts/Manrope-Light.woff2') format('woff2'),
+        url('../fonts/Manrope-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -101,8 +101,8 @@ input[type="submit"] {
 
 @font-face {
     font-family: 'Manrope-Bold';
-    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Bold.woff2') format('woff2'),
-        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Bold.woff') format('woff');
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -110,8 +110,8 @@ input[type="submit"] {
 
 @font-face {
     font-family: 'Manrope-Regular';
-    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Regular.woff2') format('woff2'),
-        url('.Exercise3/Manrope-Regular.woff') format('woff');
+    src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+        url('../fonts/Manrope-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -119,8 +119,8 @@ input[type="submit"] {
 
 @font-face {
     font-family: 'Manrope-SemiBold';
-    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-SemiBold.woff2') format('woff2'),
-        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-SemiBold.woff') format('woff');
+    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+        url('../fonts/Manrope-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -128,8 +128,8 @@ input[type="submit"] {
 
 @font-face {
     font-family: 'Manrope-Medium';
-    src: url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Medium.woff2') format('woff2'),
-        url('D:/TRAINING/Website1/Exercise3/fonts/Manrope-Medium.woff') format('woff');
+    src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
