@@ -233,12 +233,12 @@ section {
     padding: 5px 15px;
     border-radius: 5px;
     font: 16px "Manrope-Bold";
+    border: 1px solid #709d61;
 }
 
 .banner__text-content__button:hover {
     background-color:  #f7f6f4;
     color: #709d61;
-    outline: 1px solid #709d61;
     box-shadow: 1px 0 6px #709d61;  
 }
 
@@ -259,3 +259,27 @@ section {
     padding: 15px;
 }
 
+/*....................................................
+        6.3 ABOUT SECTION
+.....................................................*/
+.about__text-content {
+    align-self: baseline;
+}
+.about .about__text-content__button {
+    background-color:#f7f6f4;
+    color: #709d61;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font: 16px "Manrope-Bold";
+    border: 1px solid #709d61;
+}
+
+.about .about__text-content__button:hover {
+    background-color:#709d61;
+    color: #f7f6f4 ;
+    box-shadow: 1px 0 6px #f7f6f4 ; 
+}
+
+/*....................................................
+        6.4 SERVICES SECTION
+.....................................................*/
