@@ -1,0 +1,269 @@
+/* 
+    * Removes all margins
+    * Allows including padding and border to element's total width and height.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    * Adds Font style to website body
+*/
+body {
+    font: 14px arial, helvetica, sans-serif;
+}
+
+/* Setting default margin propertis to `p` element */
+p {
+    margin: 0 0 15px 0;
+}
+
+/*
+    * Adds Maximum width and centering properties to element
+*/
+.container {
+    max-width: 1084px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*
+    * Adds height, width to the header
+    * Sets background colour of header
+    * Adds padding to header
+    * Assigns weight, style and color to border
+    * Aligns header contents to the left
+*/
+header {
+    height: 125px;
+    width: 100%;
+    background-color: #95E1F9;
+    padding: 30px;
+    border-bottom: 37px solid #66c5e4;
+    float: left;
+}
+
+/*
+    * Adds height and width to the search element
+    * Aligns element to the right of the container
+    * Adds weight, style and color to border
+    * Aligns padding to content 
+    * Adds drop shadow and right margin 
+
+*/
+#search {
+    width: 170px;
+    height: 35px;
+    float: right;
+    border: 3px solid #66c5e4;
+    border-radius: 20px;
+    padding: 0 0 0 15px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+    margin: 0 34px 0 0;
+}
+
+/*
+    *  Adds background color, font color, width, height, padding, and margin to  content under `main` tag
+    * Aligns content to the left
+*/
+main .content {
+    background-color: #f1f1f1;
+    color: #000000;
+    width: 100%;
+    height: calc(100vh - 125px);
+    float: left;
+    padding:0;
+    margin:0 auto;
+}
+
+/* Removes any default list styling in the `aside` tag */ 
+.left-sec {
+	list-style : none;
+}
+
+/* 
+    * Removes any default list styling with class `right-sec`
+    * Aligns content to the left
+    * Applies background color and width property 
+
+*/ 
+.right-sec {
+    background-color: #f1f1f1;
+    width: 18%;
+    float: left;
+    list-style-type: none;
+}
+
+/* 
+    * Applies margins to h3 under class `right-sec`
+    * Aligns content to the left
+    * Applies background color and width property 
+
+*/ 
+.right-sec h3 {
+    margin: 12px 0 10px 15px;
+    text-align:left;
+    font-weight:normal
+}
+
+/* Removes list styling from unordered list under `right-sec` class */
+.right-sec ul {
+    list-style: none;
+    margin: 0 0 0 15px;
+}
+
+/* Sets image width and margin under class `right-sex` */
+.right-sec img {
+    width: 80%;
+    margin: 0 0 20px 0;
+}
+
+/* Applies margin and removes list styling from unordered list under `nav` tag */
+nav ul {
+    list-style: none;
+    margin: 0 0 0 65%;
+}
+
+/* Applies padding, left alignment and margin to list items under `nav` tag */
+nav li {
+    padding: 10px;
+    float: left;
+    margin: 1px 20px 0 0;
+}
+
+/* Removes text decoration from all `a` tags and sets font color */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Changes background color, font color and size of `a` and `li` under `nav` tag */
+nav a:hover, nav li:hover {
+    background-color: rgba(184, 204, 3, 0.979);
+    color: white;
+    cursor: pointer;
+    transform: scale(1);   
+}
+
+/*
+    * Sets background color, height, width, and padding to class `right-sec`
+    * Aligns content to left
+*/
+.middle-sec {
+    background-color: #ffffff;
+    width: 82%;
+    height: calc(100vh - 200px);
+    float: left;
+    padding: 20px;
+}
+
+/* 
+    * Aligns content to the left
+    * Expands class `text-wrap` to fill the container
+    * Adds right padding
+
+*/
+.text-wrap {
+    width: 100%;
+    float: left;
+    padding: 0 3px 0 0px;
+}
+
+/* 
+    The following are applied to `p` tag under `text-wrap` class
+    * Applies width and padding 
+    * Aligns text content
+*/
+.text-wrap p {
+    padding: 15px 0 0 0;
+    text-align: justify;
+    width: 60%;
+}
+
+/* Adds padding to `h3` tag under `right-sec` class */
+.right-sec h3 { 
+    padding: 3px 0 3px;
+}
+
+/* Adds padding, width with height=auto and aligns image to the right */
+.img-wrap {
+    float: right;
+    padding: 0px 1px 0px 20px;
+    width: 30%;
+}
+
+/*
+    The following properties are added to `table` tag:
+    * Merges all borders of table into one
+    * Aligns text to left
+    * Generates equidistant columns
+    * Sets background and font color
+    * Sets margin top
+*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+    background-color: #95E1F9;
+    color: white;
+    margin: 250px 0 0 0;
+}
+
+/* Border styling and padding are applied to `th` and `td` tags */
+th, td {
+    border: 2px solid white;
+    padding: 4px 0 4px 6px;
+}
+
+/* Sets background color for `tr` under `thead` tag */
+thead tr {
+    background-color: #6aa1b2;
+}
+
+/* 
+    * `button` under `table` tag is assigned background color, padding, and border
+    * Applies block property
+*/
+table button {
+    display: block;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 1px 2px 1px 2px;
+    border: 1px 1px 1px 1px; 
+}
+
+/*
+    * Background color, width, and font size are applied
+    * Aligns content to the left
+    * Fixes position to the botton of the page
+*/
+footer {
+    background-color: #c7c7c7;
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* Removes default list style from `ul` under footer tag */
+footer ul {
+    list-style: none;
+}
+
+/* Applies width, float and padding property to list items under `footer` tag */
+footer ul li {
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+
+/*Centers and pads footer content */
+footer .container {
+    margin: 0 auto;
+    padding: 10px;
+}

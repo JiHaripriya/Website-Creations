@@ -1,0 +1,4 @@
+Header Bg color - #95E1F9 
+Header border color - #66c5e4
+Content Bg color - #f1f1f1
+Footer Bg color - #c7c7c7

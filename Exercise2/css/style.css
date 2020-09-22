@@ -1,0 +1,272 @@
+/****************************************************************
+                            REUSABLE SECTION
+*****************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+/* Apply font size and type */
+body {
+    font: 14px Georgia, 'Times New Roman', Serif;
+    letter-spacing: 2px;
+}
+
+/* Centering text, font size, letter spacing to headers and paragraph */
+h2 {
+    text-align: center;
+    font: 1.75em normal;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font: 13px normal;
+    text-align: center;
+}
+
+a { 
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 0 15px 0 0;    
+}
+
+a:hover {
+    color:  #617d91;
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 2;
+    font: 12px normal;
+}
+
+/****************************************************************
+                            HEADER SECTION
+*****************************************************************/
+
+header {
+    height: 55px;
+    border: 0 0 12px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#ffffff, rgb(250, 250, 250));
+    box-shadow: 0px 4px 15px rgb(153, 153, 153);
+    z-index: 2;
+}
+
+header .container {
+    margin: 0 auto;
+    max-width: 90vw;
+    padding: 20px 10px 0 0;
+}
+
+/* Apply styling to Logo item */
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+/* Restricting main content and centering */
+main {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+/****************************************************************
+                            BANNER SECTION
+*****************************************************************/
+
+/* Image positioning  and resizing*/
+.banner {
+    margin: 55px auto 0;
+    max-width: 85vw;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* Position `p` to align with image */
+.banner h1 {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: rgb(126, 126, 126);
+}
+
+/****************************************************************
+                    GENERAL CHARACTERISTICS : SECTION
+*****************************************************************/
+/* Distance between sections */
+section {
+    margin: 0 0 25px 0;
+    float: left;
+    width: 100%;
+}
+
+/* Content size and spacing */
+section .content {
+    float: left;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 50px 0;
+    margin: 0 17vw;
+    width: calc(100% - 34vw);
+}
+
+/****************************************************************
+                            ABOUT SECTION
+*****************************************************************/
+
+/* Image position and size with respect to section */
+.about-image-wrap {
+    padding: 30px 0 10px 0;
+    width: 45%;
+}
+
+.about-img {
+    width: 100%;
+    float: left;
+}
+
+/* Text content of section about */
+.about-text-wrap {
+    float: right;
+    width: 52%; 
+}
+
+/* Change color of last paragraph */ 
+.color-text {
+    color: rgb(153, 153, 153);
+}
+
+/* Highlight text with color */
+.highlight-text-grey {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 1px 3px 1px 3px;
+}
+
+/****************************************************************
+                            MENU SECTION
+*****************************************************************/
+.menu-image-wrap {
+    width: 45%;
+    float: right;
+}
+
+.menu-img {
+    width: 100%;
+    float: right;
+}
+
+/* Text content of section about */
+.menu-text-wrap {
+    float: left;
+    width: 52%; 
+}
+
+/* Centering text, font size, letter spacing to headers */
+
+.menu-text-wrap h3 {
+    font-size: 14px;
+    padding: 10px 0 0 0;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+.menu p:nth-child(even) {
+    letter-spacing: normal;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    padding: 0 0 20px 0;
+}
+
+/****************************************************************
+                            CONTACT SECTION
+*****************************************************************/
+
+.contact .content {
+    border-bottom: none;
+    padding: 0 0 40px 0;
+}
+
+.contact h2 {
+    text-align: left;
+}
+
+.highlight-text-blue {
+    color: #617d91;
+    font: 14px bolder;
+}
+
+/****************************************************************
+                            CONTACT FORM
+*****************************************************************/
+/* Spacing between form elements */
+form {
+    margin: 50px 0 0 0;
+}
+
+/* Removing borders and adjusting width of input elements */
+form input[type="text"],
+form input[type="number"],
+form input[type="datetime-local"]  {
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 10px;
+    border: none;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+/* Customizing button */
+form input[type="submit"] {
+    border: none;
+    margin: 10px 0 0 0;
+    padding: 10px 15px 10px 15px;
+}
+
+form input[type="submit"]:hover {
+    color:  #617d91;
+    outline: solid 1px #617d91;
+}
+
+/* Removes highlight box of input elements on focus */
+input:focus {
+    outline: none;
+}
+
+/* Removes excess padding of main section */
+.clear-fix {
+    clear: both;
+}
+
+/*****************************************************
+                    FOOTER SECTION
+******************************************************/
+
+/* Position footer and setting color */
+footer {
+    height: 95px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+/* Aligning text to center */
+footer p {
+    padding: 45px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.underline {
+    text-decoration: underline;
+}
