@@ -201,6 +201,10 @@ section {
     margin: 0 0 25px 0;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 /*................................................
     5. HEADER SECTION
 .................................................*/
@@ -291,10 +295,6 @@ section {
     text-align: left;
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
-
 .service img {
     align-self: flex-start;
 }
@@ -303,6 +303,7 @@ section {
     padding: 20px 15px;
     transition: transform .2s;
 }
+
 .service__content > div:hover {
     background-color:#ffffff;
     transform: scale(1.05);
@@ -318,8 +319,6 @@ section {
 }
 
 .work-done--seperation img {
-    align-self: flex-start;
-    flex: 0 0 33.33%;
     height: 220px;
     border-radius: 10px;
 }
