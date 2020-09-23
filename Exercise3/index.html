@@ -18,8 +18,8 @@
             <nav class="main-nav">
                 <ul class="main-nav__list row-align">
                     <li class="main-nav__item"><a href="#">Home</a></li>
-                    <li class="main-nav__item"><a href="#">About</a></li>
-                    <li class="main-nav__item"><a href="#">Contact</a></li>
+                    <li class="main-nav__item"><a href="#about">About</a></li>
+                    <li class="main-nav__item"><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
        </div>
@@ -76,7 +76,7 @@
         <!--What We Offer Section Ends-->
 
         <!--About Us Section Begins-->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container row-align">
                 <div class="block__img">
                     <img src="images/img-2.jpg" alt="Smiling boy watering plants on balcony">
@@ -177,11 +177,103 @@
         </section>
         <!--Work We Done Section Ends-->
         
+        <!--Testimony Section Begins-->
+        <section class="testimonial center-align">
+            <div class="container">
+                <span class="secondary-color">Testimonial</span>
+                <h2>Clients Say About Us</h2>
+                <div class="testimonial--content row-align">
+                    <div class="column-align">
+                        <img class="testimony__image" src="images/testimonial/testimonial-2.jpg" alt="Smiling boy watering plants on balcony">
+                    </div>
+                    <div>
+                        <div class="icon-modifier left-align">
+                            <img class="img-scale" src="images/quote.png" alt="Quotation mark">
+                            <p>Lorem ipsum dolor sit amet Eveniet ducimus asperiores vero soluta harum unde, exercitationem earum minima! Ullam unde accusamus totam velit sequi dignissimos.</p>
+                            <h3>Jonathan Rainink</h3>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Testimony Section Ends-->
+
+        <!--Newsletter Section Begins-->
+        <section class="newsletter center-align">
+            <div class="container">
+               <span class="secondary-color">Newsletter</span> 
+                <h2>Get Gardening Tips</h2>
+                <form class="row-align">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required="">
+                    <input type="button" value="Subscribe">
+                </form>
+            </div>
+        </section>
+        <!--Newsletter Section Ends-->
     </main>
 
     <footer id="footer">
-
-    </footer>
+        <hr>
+        <div class="footer--alignment container row-align">
+            <div class="column-align">
+                <div><img src="images/logo.png" alt="Gardener logo"></div>
+                <p>
+                  There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.
+                </p>
+            </div>
+        
+            <div style="display: flex;flex-direction: column;">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+              
+            <div style="display: flex;flex-direction: column;">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">+89009977-776</a></li>
+                    <li><a href="#">gardener@contact.us</a></li>
+                    <li><a href="#">Facebook Page</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        
+            <div class="contact-2 ">
+                <h3>Contact</h3>
+                <ul class="row-align">
+                    <li style="display: flex;flex-direction: column; margin: 0 5px;">
+                        <span >Saturday</span>
+                        <span >Sunday</span>
+                        <span >Monday</span>
+                        <span >Tuesday</span>
+                        <span >Wednesday</span>
+                        <span >Thursday</span>
+                        <span >Friday</span>
+                        
+                    </li>
+                    <li style="display: flex;flex-direction: column;">
+                        <span class="time">8.30am - 4.00pm</span>
+                        <span class="time">8.30am - 4.00pm</span>
+                        <span class="time">8.30am - 4.00pm</span>
+                        <span class="time">8.30am - 4.00pm</span>
+                        <span class="time">8.30am - 4.00pm</span>
+                        <span class="time">8.30am - 4.00pm</span>
+                        <span class="secondary-color">Closed</span>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+        <hr>
+    
+        <div class="copyright">
+          <p>Copyright © 2020 Gardener. All rights received.</p>
+        </div>
+      </footer>
 
 </body>
 </html>

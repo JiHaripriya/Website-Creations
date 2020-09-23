@@ -65,11 +65,43 @@ img {
 
 button,
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+input[type="email"] {
   border: 0;
   outline: none;
 }
 
+*::-webkit-input-placeholder {
+    color: #656565;
+    font: 18px;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #656565;
+    font: 18px;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #656565;
+    font: 18px;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #656565;
+    font: 18px;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #656565;
+    font: 18px;
+}
+*::placeholder {
+    /* modern browser */
+    color: #656565;
+    font: 18px;
+}
 
 /*................................................
     2. TYPOS
@@ -187,7 +219,7 @@ h3 {
 }
 
 section {
-    margin: 0 0 60px 0;
+    margin: 0 0 70px 0;
 }
 
 .center-align {
@@ -315,7 +347,7 @@ section {
 
 .work-done--seperation > div {
     padding: 20px 15px;
-    transition: transform .3s;
+    transition: all 0.3s ease;
 }
 
 .work-done--seperation img {
@@ -324,10 +356,105 @@ section {
 }
 
 .work-done--seperation > div:hover {
-    transform: scale(0.90);
+    transform: scale(0.80);
     box-shadow:  1px 1px 10px 0 #000000;
 }
 
 /*....................................................
         6.6 TESTIMONIAL SECTION
 .....................................................*/
+
+.testimonial .icon-modifier img {
+    background-color: #709d61;
+}
+
+.testimonial .row-align {
+    flex: 0 0 50%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial .left-align {
+    text-align: left;
+}
+
+.img-scale {
+    height: 50px;
+    width: 50px;
+}
+
+.testimonial--content div {
+    padding: 5px 15px 5px 15px;
+}
+
+.testimony__image {
+    border-radius: 5px;
+}
+
+.testimonial h2 {
+    margin: 0 0 50px 0;
+}
+
+.testimonial h3 {
+    margin: 15px 0 0 0;
+}
+
+/*....................................................
+        6.7 NEWS LETTER SECTION
+.....................................................*/
+
+.newsletter .container {
+    background-color: rgb(240, 241, 236);
+    padding: 40px;   
+}
+.newsletter h2 {
+    font: 40px "Manrope-Bold";
+}
+
+form {
+    background-color: #ffffff;
+    padding: 1px 5px;
+    justify-content: space-between;
+    max-width: 55%;
+    align-items: center;
+    margin: 0 auto;
+}
+form input[type="button"] {
+    background-color: #709d61;
+    padding: 10px 30px;
+    color: #f7f6f4;
+    border-radius: 10px;
+    align-self: center;
+}
+
+form input[type="email"] {
+    padding: 15px 35px;
+    align-self: flex-start;
+    border: none;
+    outline: none;
+}
+
+/*................................................
+    7. FOOTER SECTION
+.................................................*/
+.footer--alignment {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .container{
+    padding:35px;
+}
+footer h3 {
+    font: 16px;
+}
+
+footer .row-align {
+    flex: 0 0 50%;
+}
+
+footer .copyright {
+    padding: 10px 0;
+    text-align: center;
+    font: 14px;
+}
