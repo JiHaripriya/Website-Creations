@@ -71,6 +71,7 @@ input[type="email"] {
   outline: none;
 }
 
+/* Various browser compatible placeholder values */
 *::-webkit-input-placeholder {
     color: #656565;
     font: 18px;
@@ -219,7 +220,7 @@ h3 {
 }
 
 section {
-    margin: 0 0 70px 0;
+    margin: 0 0 100px 0;
 }
 
 .center-align {
@@ -387,10 +388,6 @@ section {
     padding: 5px 15px 5px 15px;
 }
 
-.testimony__image {
-    border-radius: 5px;
-}
-
 .testimonial h2 {
     margin: 0 0 50px 0;
 }
@@ -419,13 +416,6 @@ form {
     align-items: center;
     margin: 0 auto;
 }
-form input[type="button"] {
-    background-color: #709d61;
-    padding: 10px 30px;
-    color: #f7f6f4;
-    border-radius: 10px;
-    align-self: center;
-}
 
 form input[type="email"] {
     padding: 15px 35px;
@@ -434,19 +424,49 @@ form input[type="email"] {
     outline: none;
 }
 
+form input[type="button"] {
+    background-color: #709d61;
+    padding: 10px 30px;
+    color: #f7f6f4;
+    border-radius: 10px;
+    align-self: center;
+}
+
+form input[type="button"]:hover {
+    color: #709d61;
+    border:1px solid#709d61;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
 /*................................................
     7. FOOTER SECTION
 .................................................*/
+hr {
+    opacity: 0.3;
+}
+
+footer .container {
+    padding:35px;
+}
+
 .footer--alignment {
     justify-content: space-between;
     align-items: flex-start;
 }
 
-footer .container{
-    padding:35px;
-}
 footer h3 {
-    font: 16px;
+    font-size: 16px;
+}
+
+a {
+    color: #656565;
+}
+
+.footer__flex--reset {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 0;
 }
 
 footer .row-align {
@@ -456,5 +476,5 @@ footer .row-align {
 footer .copyright {
     padding: 10px 0;
     text-align: center;
-    font: 14px;
+    font-size: 14px;
 }

@@ -96,7 +96,7 @@
         <!--About Us Section Ends-->
 
         <!--Service Section Begins-->
-        <section class="service">
+        <section class="service" id="service">
             <div class="container center-align">
                 <span class="secondary-color">Services </span>
                 <h2 >Landscape Solutions</h2>
@@ -184,7 +184,7 @@
                 <h2>Clients Say About Us</h2>
                 <div class="testimonial--content row-align">
                     <div class="column-align">
-                        <img class="testimony__image" src="images/testimonial/testimonial-2.jpg" alt="Smiling boy watering plants on balcony">
+                        <img src="images/testimonial/testimonial-2.jpg" alt="Smiling boy watering plants on balcony">
                     </div>
                     <div>
                         <div class="icon-modifier left-align">
@@ -206,7 +206,7 @@
                 <h2>Get Gardening Tips</h2>
                 <form class="row-align">
                     <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required="">
-                    <input type="button" value="Subscribe">
+                    <input class="subscribe" type="button" value="Subscribe">
                 </form>
             </div>
         </section>
@@ -216,23 +216,25 @@
     <footer id="footer">
         <hr>
         <div class="footer--alignment container row-align">
-            <div class="column-align">
-                <div><img src="images/logo.png" alt="Gardener logo"></div>
-                <p>
-                  There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.
-                </p>
-            </div>
-        
-            <div style="display: flex;flex-direction: column;">
-                <h3>Useful Links</h3>
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="row-align">
+                <div class="footer__flex--reset">
+                    <div><img src="images/logo.png" alt="Gardener logo"></div>
+                    <p>
+                      There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.
+                    </p>
+                </div>
+            
+                <div class="column-align">
+                    <h3>Useful Links</h3>
+                    <ul>
+                      <li><a href="#about">About Us</a></li>
+                      <li><a href="#service">Services</a></li>
+                      <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
             </div>
               
-            <div style="display: flex;flex-direction: column;">
+            <div class="footer__flex--reset">
                 <h3>Contact</h3>
                 <ul>
                     <li><a href="#">Live Chat</a></li>
@@ -243,10 +245,10 @@
                 </ul>
             </div>
         
-            <div class="contact-2 ">
+            <div >
                 <h3>Contact</h3>
                 <ul class="row-align">
-                    <li style="display: flex;flex-direction: column; margin: 0 5px;">
+                    <li class="footer__flex--reset">
                         <span >Saturday</span>
                         <span >Sunday</span>
                         <span >Monday</span>
@@ -254,9 +256,8 @@
                         <span >Wednesday</span>
                         <span >Thursday</span>
                         <span >Friday</span>
-                        
                     </li>
-                    <li style="display: flex;flex-direction: column;">
+                    <li class="footer__flex--reset">
                         <span class="time">8.30am - 4.00pm</span>
                         <span class="time">8.30am - 4.00pm</span>
                         <span class="time">8.30am - 4.00pm</span>
@@ -269,7 +270,6 @@
             </div>    
         </div>
         <hr>
-    
         <div class="copyright">
           <p>Copyright © 2020 Gardener. All rights received.</p>
         </div>
