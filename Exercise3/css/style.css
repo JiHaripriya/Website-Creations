@@ -34,6 +34,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   height: 100%;
+  margin: 0 0 20px 0;
 }
 
 body {
@@ -41,6 +42,7 @@ body {
   color: #656565;
   background-color: #f7f6f4;
   line-height: 30px;
+  
 }
 
 a,
@@ -163,31 +165,42 @@ a:hover {
     color: #709d61;
 }
 
-.content-heading {
+h2 { /* title h2*/
     font: 45px "Manrope-Bold";
     color: #000000;
+    margin: 0 0 20px 0;
 }
 
-.content-sub-heading {
+h3 {
     font: 20px "Manrope-Bold";
     color: #000000;
+    margin: 0 0 20px 0;
 }
 
 .secondary-color {
     color: #709d61;
 }
 
-.content-paragraph {
+.p { /* p tag */
     font: 16px "Manrope-Medium";
+    margin: 0 0 20px 0;
 }
 
 section {
     margin: 0 0 60px 0;
 }
 
-.content-separation {
-    margin: 0 0 20px 0;
+.center-align {
+    text-align: center;
 }
+
+.icon-modifier img {
+    background-color: rgb(240, 241, 236);
+    border-radius: 40px;
+    padding: 15px;
+    margin: 0 0 25px 0;
+}
+
 /*................................................
     5. HEADER SECTION
 .................................................*/
@@ -215,19 +228,19 @@ section {
 .................................................*/
 
 /*................................................
-        6.1 BANNER SECTION
+        6.1 BANNER SECTION(s)
 .................................................*/
 
-.banner__text-content {
-    flex: 1 1 0px;
+.block__text-content {
+    flex: 0 0 50%;
 }
 
-.banner__text-content > p,
-.banner__text-content > input[type="button"] {
+.block__text-content > p,
+.block__text-content > input[type="button"] {
     margin: 25px 0 0 0;
 }
 
-.banner__text-content__button {
+.block__text-content__button {
     background-color: #709d61;
     color: #ffffff;
     padding: 5px 15px;
@@ -236,36 +249,26 @@ section {
     border: 1px solid #709d61;
 }
 
-.banner__text-content__button:hover {
+.block__text-content__button:hover {
     background-color:  #f7f6f4;
     color: #709d61;
     box-shadow: 1px 0 6px #709d61;  
 }
 
+
 /*................................................
         6.2 WHAT WE OFFER SECTION
 .................................................*/
 
-/* Preserving icon size */
-.what-we-offer {
-    text-align: center;
-}
-
-.what-we-offer img {
-    border-radius: 25px;
-    background-color: rgb(240, 241, 236);
-    border-radius: 40px;
-    padding: 15px;
-}
 
 /*....................................................
         6.3 ABOUT SECTION
 .....................................................*/
-.about__text-content {
+.about .block__text-content {
     align-self: baseline;
 }
 
-.about .about__text-content__button {
+.about .block__text-content__button {
     background-color:#f7f6f4;
     color: #709d61;
     padding: 10px 25px;
@@ -274,7 +277,7 @@ section {
     border: 1px solid #709d61;
 }
 
-.about .about__text-content__button:hover {
+.about .block__text-content__button:hover {
     background-color:#709d61;
     color: #f7f6f4 ;
     box-shadow: 1px 0 6px #f7f6f4 ; 
@@ -284,8 +287,8 @@ section {
         6.4 SERVICES SECTION
 .....................................................*/
 
-.service .container > p {
-    text-align: center;
+.service div div {
+    text-align: left;
 }
 
 .wrap {
@@ -294,12 +297,38 @@ section {
 
 .service img {
     align-self: flex-start;
-    border-radius: 25px;
-    background-color: rgb(240, 241, 236);
-    border-radius: 40px;
-    padding: 15px;
 }
 
-.service__content--seperation {
-    padding: 15px 0 0 0;
+.service__content > div {
+    padding: 20px 15px;
+    transition: transform .2s;
 }
+.service__content > div:hover {
+    background-color:#ffffff;
+    transform: scale(1.05);
+}
+
+/*....................................................
+        6.5 WORK WE DONE SECTION
+.....................................................*/
+
+.work-done--seperation > div {
+    padding: 20px 15px;
+    transition: transform .3s;
+}
+
+.work-done--seperation img {
+    align-self: flex-start;
+    flex: 0 0 33.33%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.work-done--seperation > div:hover {
+    transform: scale(0.90);
+    box-shadow:  1px 1px 10px 0 #000000;
+}
+
+/*....................................................
+        6.6 TESTIMONIAL SECTION
+.....................................................*/
