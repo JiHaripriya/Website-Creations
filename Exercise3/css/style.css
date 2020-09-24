@@ -185,7 +185,7 @@ input[type="email"] {
 .row-align {
     display: flex;
     flex-direction: row;
-    
+   
 }
 
 .column-align {
@@ -297,6 +297,9 @@ section {
         6.2 WHAT WE OFFER SECTION
 .................................................*/
 
+.what-we-offer .row-align {
+    align-items: baseline;
+}
 
 /*....................................................
         6.3 ABOUT SECTION (Modified banner)
