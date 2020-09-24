@@ -214,13 +214,13 @@ h3 {
     color: #709d61;
 }
 
-.p { /* p tag */
+p { /* p tag */
     font: 16px "Manrope-Medium";
     margin: 0 0 20px 0;
 }
 
 section {
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
 }
 
 .center-align {
@@ -246,10 +246,6 @@ section {
     padding: 25px 0; /* top and bottom = 25px */
 }
 
-.logo {
-    align-self: center;
-}
-
 .main-nav__item {
     padding: 0 15px;
     font: 16px "Manrope-Medium";
@@ -258,6 +254,10 @@ section {
 
 .main-nav__item:hover {
     transform: scale(1.5);
+}
+
+.mobile-nav-icon {
+    display: none;
 }
 
 /*................................................
@@ -299,7 +299,7 @@ section {
 
 
 /*....................................................
-        6.3 ABOUT SECTION
+        6.3 ABOUT SECTION (Modified banner)
 .....................................................*/
 .about .block__text-content {
     align-self: baseline;
@@ -347,13 +347,20 @@ section {
 .....................................................*/
 
 .work-done--seperation > div {
-    padding: 20px 15px;
     transition: all 0.3s ease;
+    padding: 10px;
+    
 }
 
+.work-done--seperation a {
+    width: 100%;
+    height: 100%;
+}
 .work-done--seperation img {
-    height: 220px;
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .work-done--seperation > div:hover {
@@ -419,9 +426,9 @@ form {
 
 form input[type="email"] {
     padding: 15px 35px;
-    align-self: flex-start;
     border: none;
     outline: none;
+    width: 100%;
 }
 
 form input[type="button"] {
@@ -429,7 +436,7 @@ form input[type="button"] {
     padding: 10px 30px;
     color: #f7f6f4;
     border-radius: 10px;
-    align-self: center;
+    
 }
 
 form input[type="button"]:hover {
@@ -443,16 +450,11 @@ form input[type="button"]:hover {
     7. FOOTER SECTION
 .................................................*/
 hr {
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 footer .container {
-    padding:35px;
-}
-
-.footer--alignment {
-    justify-content: space-between;
-    align-items: flex-start;
+    padding:35px 0;
 }
 
 footer h3 {
@@ -463,18 +465,39 @@ a {
     color: #656565;
 }
 
-.footer__flex--reset {
+#footer div > div {
+    margin: 15px;
+}
+
+footer table {
+    table-layout: fixed;
+}
+
+footer tr td:nth-child(2) {
+    padding: 0 0 0 50px;
+}
+
+footer .column-align {
     display: flex;
     flex-direction: column;
-    padding: 0 15px 0 0;
+    flex: 0 1 22%;
 }
 
-footer .row-align {
-    flex: 0 0 50%;
+.footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-footer .copyright {
+
+footer .copyright p {
     padding: 10px 0;
     text-align: center;
     font-size: 14px;
+    margin-bottom: 0px;
 }
+/*............................................................
+    8. MEDIA QUERIES
+..............................................................*/
+

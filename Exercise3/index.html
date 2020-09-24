@@ -6,6 +6,7 @@
     <title>Gardener</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -21,6 +22,13 @@
                     <li class="main-nav__item"><a href="#about">About</a></li>
                     <li class="main-nav__item"><a href="#footer">Contact</a></li>
                 </ul>
+            </nav>
+    
+            <!--For Mobiles Only-->
+            <nav class="mobile-nav-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </nav>
        </div>
     </header>
@@ -215,26 +223,24 @@
 
     <footer id="footer">
         <hr>
-        <div class="footer--alignment container row-align">
-            <div class="row-align">
-                <div class="footer__flex--reset">
-                    <div><img src="images/logo.png" alt="Gardener logo"></div>
-                    <p>
-                      There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.
-                    </p>
-                </div>
-            
-                <div class="column-align">
-                    <h3>Useful Links</h3>
-                    <ul>
-                      <li><a href="#about">About Us</a></li>
-                      <li><a href="#service">Services</a></li>
-                      <li><a href="#footer">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="container footer__wrap">
+            <div class="column-align">
+                <div><img src="images/logo.png" alt="Gardener logo"></div>
+                <p>
+                There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.
+                </p>
             </div>
-              
-            <div class="footer__flex--reset">
+    
+            <div class="column-align">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="column-align">
                 <h3>Contact</h3>
                 <ul>
                     <li><a href="#">Live Chat</a></li>
@@ -244,30 +250,20 @@
                     <li><a href="#">Instagram</a></li>
                 </ul>
             </div>
-        
-            <div >
+    
+            <div class="column-align">
                 <h3>Contact</h3>
-                <ul class="row-align">
-                    <li class="footer__flex--reset">
-                        <span >Saturday</span>
-                        <span >Sunday</span>
-                        <span >Monday</span>
-                        <span >Tuesday</span>
-                        <span >Wednesday</span>
-                        <span >Thursday</span>
-                        <span >Friday</span>
-                    </li>
-                    <li class="footer__flex--reset">
-                        <span class="time">8.30am - 4.00pm</span>
-                        <span class="time">8.30am - 4.00pm</span>
-                        <span class="time">8.30am - 4.00pm</span>
-                        <span class="time">8.30am - 4.00pm</span>
-                        <span class="time">8.30am - 4.00pm</span>
-                        <span class="time">8.30am - 4.00pm</span>
-                        <span class="secondary-color">Closed</span>
-                    </li>
-                </ul>
-            </div>    
+                <table>
+                    <tr><td>Saturday</td><td>8.30am - 4.00pm</td></tr>
+                    <tr><td>Sunday</td><td>8.30am - 4.00pm</td></tr>
+                    <tr><td>Monday</td><td>8.30am - 4.00pm</td></tr>
+                    <tr><td>Tuesday</td><td>8.30am - 4.00pm</td></tr>
+                    <tr><td>Wednesday</td><td>8.30am - 4.00pm</td></tr>
+                    <tr><td>Thursday</td><td>8.30am - 4.00pm</td></tr>
+                    <tr><td>Friday</td><td class="secondary-color">Closed</td></tr>
+                </table>
+            </div>
+        </div>
         </div>
         <hr>
         <div class="copyright">
