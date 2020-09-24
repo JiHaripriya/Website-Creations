@@ -35,13 +35,12 @@
     {     
         outline : none; 
     }
-    /*....................................................
-         HEADER SECTION
-.....................................................*/
+
     /* Hides options */
     .main-nav, .main-nav__list, .main-nav__item {
         display: none;
     }
+
     /* hamburger -------------------------------*/
     .mobile-nav-icon {
         display: block;
@@ -60,9 +59,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    /*....................................................
-         BANNER & Modified Banner SECTION
-.....................................................*/
+
     .block .row-align {
         flex-direction: column-reverse;
     }
@@ -70,18 +67,13 @@
         text-align: center;
     }
     
-    /*....................................................
-        SERVICES SECTION
-.....................................................*/
     .service div div {
         text-align: center;
     }
     .service img {
         align-self: center;
     }
-    /*....................................................
-       NEWS LETTER SECTION
-.....................................................*/
+
     .newsletter h2 {
         font: 20px "Manrope-Bold";
     }
@@ -93,9 +85,6 @@
         min-width: -moz-available;
         background-color: rgb(240, 241, 236);
    }
-   /*................................................
-        FOOTER SECTION
-    .................................................*/
     .footer__wrap {
         display: flex;
         flex-direction: column;
@@ -149,21 +138,18 @@
         font: 13px "Manrope-Bold";
     }
 
-    /* offer */
     .what-we-offer .row-align {
         align-items: flex-end;
     }
+    .what-we-offer .row-align > div {
+        padding: 5px;
+    }
 
-    /*....................................................
-        6.5 WORK WE DONE SECTION (2x3)
-    .....................................................*/
     .work-done--seperation .column-align {
         flex: 0 0 50%;
     }
 
-    /*....................................................
-        6.6 TESTIMONIAL SECTION
-    .....................................................*/
+
     .testimonial .row-align {
         margin: 0 auto;
     }
@@ -172,9 +158,6 @@
         flex: 0 0 50%;
     }
 
-    /*....................................................
-       NEWS LETTER SECTION
-    .....................................................*/
     .newsletter h2 {
         font: 20px "Manrope-Bold";
     }
@@ -187,9 +170,6 @@
         min-width: -moz-available;
     }
 
-    /*................................................
-        FOOTER SECTION
-    .................................................*/
     #footer div > div {
         margin: 10px 13px;
         align-self: initial;
@@ -212,6 +192,41 @@
     footer table {
         text-align: left;
         font-size: 13px;
+    }
+
+    footer tr td:nth-child(2) {
+        padding: 0 0 0 30px;
+    }
+    
+    footer .copyright p {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1024px) {
+
+    .what-we-offer .row-align > div{
+        padding: 5px;
+    }
+
+    #footer div > div {
+        margin: 10px 24px;
+        align-self: initial;
+    }
+
+    footer div:nth-child(odd){
+        text-align: justify;
+    }
+
+    footer .column-align {
+        flex: 0 1 45%;
+    }
+    
+    .footer__wrap {
+        display: flex;
+        flex-direction: row;
+        flex:0 1 50%;
     }
 
     footer tr td:nth-child(2) {

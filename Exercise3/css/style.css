@@ -280,7 +280,7 @@ section {
 .block__text-content__button {
     background-color: #709d61;
     color: #ffffff;
-    padding: 5px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     font: 16px "Manrope-Bold";
     border: 1px solid #709d61;
@@ -298,7 +298,8 @@ section {
 .................................................*/
 
 .what-we-offer .row-align {
-    align-items: baseline;
+    align-items: flex-start;
+    flex: 0 0 33.33%;
 }
 
 /*....................................................
@@ -500,7 +501,5 @@ footer .copyright p {
     font-size: 14px;
     margin-bottom: 0px;
 }
-/*............................................................
-    8. MEDIA QUERIES
-..............................................................*/
+
 
