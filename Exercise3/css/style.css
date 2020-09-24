@@ -1,0 +1,503 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS DocumentProject: Gardener Website
+----------------------------------------------------------------------------------------------------------*/
+
+/*------------------Layout,Table of Contents-----------------------------------------------------------------
+1. BASIC STYLING FOR COMMON HTML ELEMENTS
+2. TYPOS
+3. COMMON CSS CLASSES
+4. SKELETON
+5. HEADER SECTION
+6. BODY SECTION
+7. FOOTER SECTION
+8. MEDIA QUERIES
+-----------------------------------------------------------------------------------------------------------*/
+
+/*................................................
+    1. BASIC STYLING FOR COMMON HTML ELEMENTS
+.................................................*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Manrope-Medium", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0 0 20px 0;
+}
+
+body {
+  font-size: 16px;
+  color: #656565;
+  background-color: #f7f6f4;
+  line-height: 30px;
+  
+}
+
+a,
+a:hover,
+a:focus {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="email"] {
+  border: 0;
+  outline: none;
+}
+
+/* Various browser compatible placeholder values */
+*::-webkit-input-placeholder {
+    color: #656565;
+    font: 18px;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #656565;
+    font: 18px;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #656565;
+    font: 18px;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #656565;
+    font: 18px;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #656565;
+    font: 18px;
+}
+*::placeholder {
+    /* modern browser */
+    color: #656565;
+    font: 18px;
+}
+
+/*................................................
+    2. TYPOS
+.................................................*/
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraLight';
+    src: url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Light';
+    src: url('../fonts/Manrope-Light.woff2') format('woff2'),
+        url('../fonts/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+        url('../fonts/Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+        url('../fonts/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*................................................
+    3. COMMON CSS CLASSES
+.................................................*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-align {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.column-align {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33%;
+}
+
+a:hover {
+    color: #709d61;
+}
+
+h2 { /* title h2*/
+    font: 45px "Manrope-Bold";
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    font: 20px "Manrope-Bold";
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+.secondary-color {
+    color: #709d61;
+}
+
+p { /* p tag */
+    font: 16px "Manrope-Medium";
+    margin: 0 0 20px 0;
+}
+
+section {
+    margin: 0 0 50px 0;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.icon-modifier img {
+    background-color: rgb(240, 241, 236);
+    border-radius: 40px;
+    padding: 15px;
+    margin: 0 0 25px 0;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/*................................................
+    5. HEADER SECTION
+.................................................*/
+
+#header {
+    padding: 25px 0; /* top and bottom = 25px */
+}
+
+.main-nav__item {
+    padding: 0 15px;
+    font: 16px "Manrope-Medium";
+    transition: transform .2s;
+}
+
+.main-nav__item:hover {
+    transform: scale(1.5);
+}
+
+.mobile-nav-icon {
+    display: none;
+}
+
+/*................................................
+    6. BODY SECTION
+.................................................*/
+
+/*................................................
+        6.1 BANNER SECTION(s)
+.................................................*/
+
+.block__text-content {
+    flex: 0 0 50%;
+}
+
+.block__text-content > p,
+.block__text-content > input[type="button"] {
+    margin: 25px 0 0 0;
+}
+
+.block__text-content__button {
+    background-color: #709d61;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font: 16px "Manrope-Bold";
+    border: 1px solid #709d61;
+}
+
+.block__text-content__button:hover {
+    background-color:  #f7f6f4;
+    color: #709d61;
+    box-shadow: 1px 0 6px #709d61;  
+}
+
+
+/*................................................
+        6.2 WHAT WE OFFER SECTION
+.................................................*/
+
+
+/*....................................................
+        6.3 ABOUT SECTION (Modified banner)
+.....................................................*/
+.about .block__text-content {
+    align-self: baseline;
+}
+
+.about .block__text-content__button {
+    background-color:#f7f6f4;
+    color: #709d61;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font: 16px "Manrope-Bold";
+    border: 1px solid #709d61;
+}
+
+.about .block__text-content__button:hover {
+    background-color:#709d61;
+    color: #f7f6f4 ;
+    box-shadow: 1px 0 6px #f7f6f4 ; 
+}
+
+/*....................................................
+        6.4 SERVICES SECTION
+.....................................................*/
+
+.service div div {
+    text-align: left;
+}
+
+.service img {
+    align-self: flex-start;
+}
+
+.service__content > div {
+    padding: 20px 15px;
+    transition: transform .2s;
+}
+
+.service__content > div:hover {
+    background-color:#ffffff;
+    transform: scale(1.05);
+}
+
+/*....................................................
+        6.5 WORK WE DONE SECTION
+.....................................................*/
+
+.work-done--seperation > div {
+    transition: all 0.3s ease;
+    padding: 10px;
+    
+}
+
+.work-done--seperation a {
+    width: 100%;
+    height: 100%;
+}
+.work-done--seperation img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.work-done--seperation > div:hover {
+    transform: scale(0.80);
+    box-shadow:  1px 1px 10px 0 #000000;
+}
+
+/*....................................................
+        6.6 TESTIMONIAL SECTION
+.....................................................*/
+
+.testimonial .icon-modifier img {
+    background-color: #709d61;
+}
+
+.testimonial .row-align {
+    flex: 0 0 50%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial .left-align {
+    text-align: left;
+}
+
+.img-scale {
+    height: 50px;
+    width: 50px;
+}
+
+.testimonial--content div {
+    padding: 5px 15px 5px 15px;
+}
+
+.testimonial h2 {
+    margin: 0 0 50px 0;
+}
+
+.testimonial h3 {
+    margin: 15px 0 0 0;
+}
+
+/*....................................................
+        6.7 NEWS LETTER SECTION
+.....................................................*/
+
+.newsletter .container {
+    background-color: rgb(240, 241, 236);
+    padding: 40px;   
+}
+.newsletter h2 {
+    font: 40px "Manrope-Bold";
+}
+
+form {
+    background-color: #ffffff;
+    padding: 1px 5px;
+    justify-content: space-between;
+    max-width: 55%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form input[type="email"] {
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+form input[type="button"] {
+    background-color: #709d61;
+    padding: 10px 30px;
+    color: #f7f6f4;
+    border-radius: 10px;
+    
+}
+
+form input[type="button"]:hover {
+    color: #709d61;
+    border:1px solid#709d61;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/*................................................
+    7. FOOTER SECTION
+.................................................*/
+hr {
+    opacity: 0.1;
+}
+
+footer .container {
+    padding:35px 0;
+}
+
+footer h3 {
+    font-size: 16px;
+}
+
+a {
+    color: #656565;
+}
+
+#footer div > div {
+    margin: 15px;
+}
+
+footer table {
+    table-layout: fixed;
+}
+
+footer tr td:nth-child(2) {
+    padding: 0 0 0 50px;
+}
+
+footer .column-align {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 22%;
+}
+
+.footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+footer .copyright p {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+/*............................................................
+    8. MEDIA QUERIES
+..............................................................*/
+
