@@ -8,11 +8,10 @@
 1. BASIC STYLING FOR COMMON HTML ELEMENTS
 2. TYPOS
 3. COMMON CSS CLASSES
-4. SKELETON
-5. HEADER SECTION
-6. BODY SECTION
-7. FOOTER SECTION
-8. MEDIA QUERIES
+4. HEADER SECTION
+5. BODY SECTION
+5. FOOTER SECTION
+7. MEDIA QUERIES
 -----------------------------------------------------------------------------------------------------------*/
 
 /*................................................
@@ -238,7 +237,7 @@ section {
 }
 
 /*................................................
-    5. HEADER SECTION
+    4. HEADER SECTION
 .................................................*/
 
 #header {
@@ -260,11 +259,11 @@ section {
 }
 
 /*................................................
-    6. BODY SECTION
+    5. BODY SECTION
 .................................................*/
 
 /*................................................
-        6.1 BANNER SECTION(s)
+        5.1 BANNER SECTION(s)
 .................................................*/
 
 .block__text-content {
@@ -293,7 +292,7 @@ section {
 
 
 /*................................................
-        6.2 WHAT WE OFFER SECTION
+        5.2 WHAT WE OFFER SECTION
 .................................................*/
 
 .what-we-offer__content > div{
@@ -302,7 +301,7 @@ section {
 }
 
 /*....................................................
-        6.3 ABOUT SECTION (Modified banner)
+        5.3 ABOUT SECTION (Modified banner)
 .....................................................*/
 .about .block__text-content {
     align-self: baseline;
@@ -324,7 +323,7 @@ section {
 }
 
 /*....................................................
-        6.4 SERVICES SECTION
+        5.4 SERVICES SECTION
 .....................................................*/
 
 .service div div {
@@ -346,7 +345,7 @@ section {
 }
 
 /*....................................................
-        6.5 WORK WE DONE SECTION
+        5.5 WORK WE DONE SECTION
 .....................................................*/
 
 .work-done--seperation > div {
@@ -373,7 +372,7 @@ section {
 }
 
 /*....................................................
-        6.6 TESTIMONIAL SECTION
+        5.6 TESTIMONIAL SECTION
 .....................................................*/
 
 .testimonial .icon-modifier img {
@@ -407,7 +406,7 @@ section {
 }
 
 /*....................................................
-        6.7 NEWS LETTER SECTION
+        5.7 NEWS LETTER SECTION
 .....................................................*/
 
 .newsletter .container {
@@ -450,7 +449,7 @@ form input[type="button"]:hover {
 }
 
 /*................................................
-    7. FOOTER SECTION
+    6. FOOTER SECTION
 .................................................*/
 hr {
     opacity: 0.1;
@@ -501,6 +500,390 @@ footer .copyright {
 }
 
 /*............................................................
-    8. MEDIA QUERIES
+    7. MEDIA QUERIES
 ..............................................................*/
 
+@media (max-width: 540px) {
+    /* Commonly used */
+    * {
+        font-size:14px;
+        text-align: center;
+        justify-items: center;
+        line-height: 20px;
+    }
+
+    .row-align {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 { /* title h2*/
+        font: 25px "Manrope-Bold";
+    }
+    
+    h3 {
+        font: 15px "Manrope-Bold";
+    }
+    
+    p { /* p tag */
+        font: 13px "Manrope-Medium";
+        margin: 0 0 20px 0;
+    }
+    button::-moz-focus-inner {
+        border: 0;
+    }
+    /*for FireFox*/
+    input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner
+    {   
+        border : 0;
+    } 
+    /*for IE8 and below */
+    input[type="submit"]:focus, input[type="button"]:focus
+    {     
+        outline : none; 
+    }
+    img {
+        margin: 15px 0;
+    }
+
+    /* Hides options */
+    .main-nav, .main-nav__list, .main-nav__item {
+        display: none;
+    }
+    /* hamburger -------------------------------*/
+    .mobile-nav-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #709d61;
+        margin: 5px 0;
+    }
+
+    #header .row-align {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*....................................................
+         BANNER & Modified Banner SECTION
+    .....................................................*/
+    .block .row-align {
+        flex-direction: column-reverse;
+    }
+    .block__text-content {
+        text-align: center;
+    }
+    .block__text-content span {
+        font-size: 25px;
+    }
+
+    /*....................................................
+        SERVICES SECTION
+    .....................................................*/
+    .service div div {
+        text-align: center;
+    }
+    .service img {
+        align-self: center;
+    }
+
+    .work-done--seperation > div:hover {
+        box-shadow:  none;
+    }
+
+    /*....................................................
+        5.6 TESTIMONIAL SECTION
+    .....................................................*/
+
+    .testimonial .icon-modifier img {
+        background-color: #709d61;
+    }
+
+    .testimonial .column-align > div{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .testimonial .left-align {
+        text-align: left;
+    }
+
+    .testimonial--content div {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .testimonial h2 {
+        margin: 0 0 50px 0;
+    }
+
+    .testimonial h3 {
+        margin: 15px 0 0 0;
+    }
+
+    /*....................................................
+       NEWS LETTER SECTION
+    .....................................................*/
+    .newsletter h2 {
+        font: 20px "Manrope-Bold";
+    }
+    /* Form */
+   form {
+        padding: 0;
+        margin: 0;
+        min-width: -webkit-fill-available;
+        min-width: -moz-available;
+        background-color: rgb(240, 241, 236);
+   }
+   /*................................................
+        FOOTER SECTION
+    .................................................*/
+    .footer__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer table {
+        text-align: left;
+    }
+
+    footer .copyright span {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 739px){
+    /* Commonly used */
+    * {
+        font-size:14px;
+        text-align: center;
+        justify-items: center;
+        line-height: 20px;
+    }
+
+    .row-align {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 { /* title h2*/
+        font: 25px "Manrope-Bold";
+    }
+    
+    h3 {
+        font: 15px "Manrope-Bold";
+    }
+    
+    p { /* p tag */
+        font: 13px "Manrope-Medium";
+        margin: 0 0 20px 0;
+    }
+
+    button::-moz-focus-inner {
+        border: 0;
+    }
+    /*for FireFox*/
+    input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner
+    {   
+        border : 0;
+    } 
+    /*for IE8 and below */
+    input[type="submit"]:focus, input[type="button"]:focus
+    {     
+        outline : none; 
+    }
+    img {
+        margin: 25px 0;
+    }
+    /*....................................................
+            HEADER SECTION
+    .....................................................*/
+    /* Hides options */
+    .main-nav, .main-nav__list, .main-nav__item {
+        display: none;
+    }
+    /* hamburger -------------------------------*/
+    .mobile-nav-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #709d61;
+        margin: 5px 0;
+    }
+
+    #header .row-align {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*....................................................
+            BANNER & Modified Banner SECTION
+    .....................................................*/
+    .block .row-align {
+        flex-direction: column-reverse;
+    }
+    .block__text-content {
+        text-align: center;
+    }
+    .block__text-content span {
+        font-size: 25px;
+    }
+    /*....................................................
+        SERVICES SECTION
+    .....................................................*/
+    .service .row-align {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .service .column-align {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;
+    }
+    .service div div {
+        text-align: center;
+    }
+    .service img {
+        align-self: center;
+    }
+
+    .work-done .row-align {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .work-done .column-align {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;
+    }
+    .work-done--seperation > div:hover {
+        box-shadow:  none;
+    }
+    form {
+        background-color: rgb(240, 241, 236);
+        padding: 1px 5px;
+        justify-content: space-between;
+        max-width: 55%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .testimonial .row-align {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .testimonial .column-align {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;
+    }
+    /*................................................
+        FOOTER SECTION
+    .................................................*/
+    footer p {
+        font-size: 16px;
+    }
+    .footer__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer table {
+        text-align: left;
+    }
+
+    footer .copyright span {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 739px) and (max-width: 990px) {
+    * {
+        font-size:14px;
+        justify-items: center;
+        line-height: 20px;
+    }
+
+    h2 { /* title h2*/
+        font: 25px "Manrope-Bold";
+    }
+    
+    h3 {
+        font: 15px "Manrope-Bold";
+    }
+    
+    p { /* p tag */
+        font: 13px "Manrope-Medium";
+        margin: 0 0 20px 0;
+    }
+
+    /* Footer made responsive */
+    #logo-section p {
+        font: 14px "Manrope-Medium";
+    }
+
+    footer div a {
+        font: 14px "Manrope-Medium";
+    }
+    .footer__wrap {
+        flex: none;
+        margin: auto 10%;
+    }
+    footer .column-align {
+        flex:auto;
+    }
+    footer .copyright span {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1129px) {
+    /* Footer made responsive */
+    .footer__wrap {
+        flex: none;
+        margin: auto 10%;
+    }
+    footer .column-align {
+        flex:auto;
+    }
+    footer .copyright span {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1129px) and (max-width: 1220px) {
+    /* Footer made responsive */
+    .footer__wrap {
+        flex: none;
+        margin: auto 10%;
+    }
+    .footer__wrap div:nth-child(1){
+        flex: 1 0 100%;
+        padding: 0;
+    }
+    
+    footer .column-align {
+        flex: 0 0 30%;
+        flex-wrap: wrap;
+        
+    }
+    footer .copyright span {
+        text-align: center;
+        font-size: 10px;
+    }
+}
