@@ -602,7 +602,7 @@ footer .copyright {
         background-color: #709d61;
     }
 
-    .testimonial .column-align > div{
+    .testimonial .column-align > div {
         flex-direction: column;
         margin: 0 auto;
     }
@@ -656,7 +656,7 @@ footer .copyright {
     }
 }
 
-@media (min-width: 540px) and (max-width: 739px){
+@media (min-width: 540px) and (max-width: 739px) {
     /* Commonly used */
     * {
         font-size:14px;
