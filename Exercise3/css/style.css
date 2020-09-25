@@ -829,7 +829,9 @@ footer .copyright {
         font: 13px "Manrope-Medium";
         margin: 0 0 20px 0;
     }
-
+    .block__text-content span {
+        font-size: 25px;
+    }
     /* Footer made responsive */
     #logo-section p {
         font: 14px "Manrope-Medium";
