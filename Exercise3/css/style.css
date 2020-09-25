@@ -185,7 +185,6 @@ input[type="email"] {
 .row-align {
     display: flex;
     flex-direction: row;
-   
 }
 
 .column-align {
@@ -272,15 +271,15 @@ section {
     flex: 0 0 50%;
 }
 
-.block__text-content > p,
-.block__text-content > input[type="button"] {
-    margin: 25px 0 0 0;
+.block__text-content > p {
+    margin: 25px 0 30px 0;
 }
+
 
 .block__text-content__button {
     background-color: #709d61;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 9px 15px;
     border-radius: 5px;
     font: 16px "Manrope-Bold";
     border: 1px solid #709d61;
@@ -289,7 +288,7 @@ section {
 .block__text-content__button:hover {
     background-color:  #f7f6f4;
     color: #709d61;
-    box-shadow: 1px 0 6px #709d61;  
+    border: 1px solid #709d61;
 }
 
 
@@ -297,9 +296,9 @@ section {
         6.2 WHAT WE OFFER SECTION
 .................................................*/
 
-.what-we-offer .row-align {
-    align-items: flex-start;
-    flex: 0 0 33.33%;
+.what-we-offer__content > div{
+    padding: 15px;
+    align-items: center;
 }
 
 /*....................................................
@@ -353,7 +352,8 @@ section {
 .work-done--seperation > div {
     transition: all 0.3s ease;
     padding: 10px;
-    
+    object-fit: cover;
+    object-position: center;
 }
 
 .work-done--seperation a {
@@ -381,7 +381,6 @@ section {
 }
 
 .testimonial .row-align {
-    flex: 0 0 50%;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -494,12 +493,14 @@ footer .column-align {
     align-items: baseline;
 }
 
-
-footer .copyright p {
+footer .copyright {
     padding: 10px 0;
     text-align: center;
     font-size: 14px;
     margin-bottom: 0px;
 }
 
+/*............................................................
+    8. MEDIA QUERIES
+..............................................................*/
 
