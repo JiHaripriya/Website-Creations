@@ -270,7 +270,7 @@ section {
     flex: 0 0 50%;
 }
 
-.block__text-content > p {
+.block__text-content p {
     margin: 25px 0 30px 0;
 }
 
@@ -295,7 +295,7 @@ section {
         5.2 WHAT WE OFFER SECTION
 .................................................*/
 
-.what-we-offer__content > div{
+.what-we-offer__content__item {
     padding: 15px;
     align-items: center;
 }
@@ -326,7 +326,7 @@ section {
         5.4 SERVICES SECTION
 .....................................................*/
 
-.service div div {
+.service__content {
     text-align: left;
 }
 
@@ -334,12 +334,12 @@ section {
     align-self: flex-start;
 }
 
-.service__content > div {
+.service__content__item {
     padding: 20px 15px;
     transition: transform .2s;
 }
 
-.service__content > div:hover {
+.service__content__item:hover {
     background-color:#ffffff;
     transform: scale(1.05);
 }
@@ -348,25 +348,24 @@ section {
         5.5 WORK WE DONE SECTION
 .....................................................*/
 
-.work-done--seperation > div {
+.work-done--wrapper a {
+    width: 100%;
+    height: 100%;
+}
+.work-done--wrapper img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+.work-done--wrapper > div {
     transition: all 0.3s ease;
     padding: 10px;
     object-fit: cover;
     object-position: center;
 }
 
-.work-done--seperation a {
-    width: 100%;
-    height: 100%;
-}
-.work-done--seperation img {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    
-}
-
-.work-done--seperation > div:hover {
+.work-done--wrapper > div:hover {
     transform: scale(0.80);
     box-shadow:  1px 1px 10px 0 #000000;
 }
@@ -393,7 +392,7 @@ section {
     width: 50px;
 }
 
-.testimonial--content div {
+.testimonial__content div {
     padding: 5px 15px 5px 15px;
 }
 
@@ -467,7 +466,7 @@ a {
     color: #656565;
 }
 
-#footer div > div {
+.footer__seperator {
     margin: 15px;
 }
 
@@ -584,14 +583,14 @@ footer .copyright {
     /*....................................................
         SERVICES SECTION
     .....................................................*/
-    .service div div {
+    .service__content {
         text-align: center;
     }
     .service img {
         align-self: center;
     }
 
-    .work-done--seperation > div:hover {
+    .work-done--wrapper > div:hover {
         box-shadow:  none;
     }
 
@@ -612,7 +611,7 @@ footer .copyright {
         text-align: left;
     }
 
-    .testimonial--content div {
+    .testimonial__content div {
         padding: 5px 15px 5px 15px;
     }
 
@@ -750,7 +749,7 @@ footer .copyright {
         flex-direction: column;
         flex: 0 0 50%;
     }
-    .service div div {
+    .service__content {
         text-align: center;
     }
     .service img {
@@ -767,7 +766,7 @@ footer .copyright {
         flex-direction: column;
         flex: 0 0 50%;
     }
-    .work-done--seperation > div:hover {
+    .work-done--wrapper > div:hover {
         box-shadow:  none;
     }
     form {
@@ -868,13 +867,13 @@ footer .copyright {
     }
 }
 
-@media (min-width: 1129px) and (max-width: 1220px) {
+@media (min-width: 1129px) and (max-width: 1200px) {
     /* Footer made responsive */
     .footer__wrap {
         flex: none;
         margin: auto 10%;
     }
-    .footer__wrap div:nth-child(1){
+    .footer__wrap div:nth-child(1) {
         flex: 1 0 100%;
         padding: 0;
     }
